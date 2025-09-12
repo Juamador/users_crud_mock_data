@@ -1,0 +1,34 @@
+<div class="p-4">
+    <div class="d-flex flex-col">
+        <div class="row">
+            <p class="text-center p-2 fs-1">
+                Welcome to my app!!!
+            </p>
+        </div>
+    </div>
+
+    <div class="flex-col mobile">
+        <div>
+            <app-card title="User management">
+                <div class="text-justify">
+                    <div class="flex-col">
+                        <p>The User Management Web Application is a scalable, responsive and modern platform designed to streamline the administration of user accounts, roles, and permissions across an organization.</p>
+                        <p>Built with Angular 20 and Bootstrap 5,the application emphasizes modular architecture and intuitive UX.</p>
+                    </div>
+                </div>
+            </app-card>
+        </div>
+        <div>
+            <app-card title="Used Technologies" class="mt-4">
+                @for (technology of technologyList; track technology.name) {
+                <div class="row mb-2">
+                    <div class="col-2">
+                        <img [src]="technology.imageUrl" [alt]="technology.name" class="rounded-circle" height="40" width="40">
+                    </div>
+                    <div class="col-10 fs-4 fw-bold">{{technology.name}}</div>
+                </div>
+                }
+            </app-card>
+        </div>
+    </div>
+</div>
