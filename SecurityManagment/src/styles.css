@@ -2,8 +2,18 @@
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card {
     border-radius: 0.5rem;
+}
+
+.w-80 {
+    width: 80%;
 }
 
 .text-justify {

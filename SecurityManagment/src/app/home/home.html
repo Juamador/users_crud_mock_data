@@ -1,4 +1,4 @@
-<div class="p-4">
+<div class="p-2">
     <div class="d-flex flex-col">
         <div class="row">
             <p class="text-center p-2 fs-1">
@@ -7,8 +7,8 @@
         </div>
     </div>
 
-    <div class="flex-col mobile">
-        <div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
             <app-card title="User management">
                 <div class="text-justify">
                     <div class="flex-col">
@@ -18,7 +18,7 @@
                 </div>
             </app-card>
         </div>
-        <div>
+        <div class="col-sm-12 col-md-6">
             <app-card title="Used Technologies" class="mt-4">
                 @for (technology of technologyList; track technology.name) {
                 <div class="row mb-2">

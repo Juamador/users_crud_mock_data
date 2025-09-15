@@ -1,0 +1,15 @@
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 668px) {
+    .navbar-nav>li:hover {
+        background-color: black;
+        color: white
+    }
+}
